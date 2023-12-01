@@ -61,13 +61,13 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/motor.dir/motor.c.obj
  .data          0x00000000        0x0 CMakeFiles/motor.dir/motor.c.obj
  .bss           0x00000000        0x0 CMakeFiles/motor.dir/motor.c.obj
- .rodata.REV_RIGHT
-                0x00000000        0x4 CMakeFiles/motor.dir/motor.c.obj
- .rodata.FWD_RIGHT
-                0x00000000        0x4 CMakeFiles/motor.dir/motor.c.obj
  .rodata.REV_LEFT
                 0x00000000        0x4 CMakeFiles/motor.dir/motor.c.obj
  .rodata.FWD_LEFT
+                0x00000000        0x4 CMakeFiles/motor.dir/motor.c.obj
+ .rodata.REV_RIGHT
+                0x00000000        0x4 CMakeFiles/motor.dir/motor.c.obj
+ .rodata.FWD_RIGHT
                 0x00000000        0x4 CMakeFiles/motor.dir/motor.c.obj
  .text          0x00000000        0x0 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1229,9 +1229,9 @@ Discarded input sections
  .comment       0x00000000       0x27 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
- .text          0x00000000        0x0 /tmp/ccsbCqTs.o
- .data          0x00000000        0x0 /tmp/ccsbCqTs.o
- .bss           0x00000000        0x0 /tmp/ccsbCqTs.o
+ .text          0x00000000        0x0 /tmp/ccGguM6X.o
+ .data          0x00000000        0x0 /tmp/ccGguM6X.o
+ .bss           0x00000000        0x0 /tmp/ccGguM6X.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000       0x10 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1495,7 +1495,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/ccsbCqTs.o
+ .boot2         0x10000000      0x100 /tmp/ccGguM6X.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2061,122 +2061,119 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .iplt           0x10004b48        0x0
  .iplt          0x10004b48        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10004b48      0x358
+.rodata         0x10004b48      0x348
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
- .rodata.main.str1.4
-                0x10004b48        0xd CMakeFiles/motor.dir/motor.c.obj
- *fill*         0x10004b55        0x3 
  .rodata.str1.4
-                0x10004b58       0x25 CMakeFiles/motor.dir/motor.c.obj
- *fill*         0x10004b7d        0x3 
- .rodata.__bi_12.0
-                0x10004b80        0xc CMakeFiles/motor.dir/motor.c.obj
- .rodata.__bi_13.1
-                0x10004b8c        0xc CMakeFiles/motor.dir/motor.c.obj
+                0x10004b48       0x25 CMakeFiles/motor.dir/motor.c.obj
+ *fill*         0x10004b6d        0x3 
+ .rodata.__bi_13.0
+                0x10004b70        0xc CMakeFiles/motor.dir/motor.c.obj
+ .rodata.__bi_14.1
+                0x10004b7c        0xc CMakeFiles/motor.dir/motor.c.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x10004b98       0x1b CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x10004bb3        0x1 
+                0x10004b88       0x1b CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x10004ba3        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x10004bb4       0x1b CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004bcf        0x1 
+                0x10004ba4       0x1b CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004bbf        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x10004bd0       0x22 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10004bf2        0x2 
+                0x10004bc0       0x22 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10004be2        0x2 
  .rodata.panic.str1.4
-                0x10004bf4       0x12 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10004c06        0x2 
+                0x10004be4       0x12 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10004bf6        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x10004c08        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10004bf8        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x10004c14       0x3c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004c04       0x3c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10004c50        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004c40        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10004c5c        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004c4c        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10004c68        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004c58        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x10004c74        0x2 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10004c76        0x2 
+                0x10004c64        0x2 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10004c66        0x2 
  .rodata.str1.4
-                0x10004c78       0x2c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004c68       0x2c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x10004ca4        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004c94        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x10004cb0        0x8 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004ca0        0x8 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata._resetd_driver
-                0x10004cb8       0x18 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004ca8       0x18 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x10004cd0       0x13 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x10004ce3        0x1 
+                0x10004cc0       0x13 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x10004cd3        0x1 
  .rodata.__bi_182.0
-                0x10004ce4        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004cd4        0xc CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x10004cf0       0x2a CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x10004d1a        0x2 
+                0x10004ce0       0x2a CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x10004d0a        0x2 
  .rodata.usbd_desc_str
-                0x10004d1c       0x18 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004d0c       0x18 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_cfg
-                0x10004d34       0x54 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004d24       0x54 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x10004d88       0x12 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x10004d9a        0x2 
+                0x10004d78       0x12 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x10004d8a        0x2 
  .rodata.str1.4
-                0x10004d9c       0x14 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d8c       0x14 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x10004db0       0x49 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10004da0       0x49 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
                                  0x53 (size before relaxing)
- *fill*         0x10004df9        0x3 
+ *fill*         0x10004de9        0x3 
  .rodata.tud_task_ext
-                0x10004dfc       0x8c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10004dec       0x8c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x10004e88       0x18 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x10004ea0                        . = ALIGN (0x4)
+                0x10004e78       0x18 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x10004e90                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10004ea0                        . = ALIGN (0x4)
+                0x10004e90                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10004ea0                        __exidx_start = .
+                0x10004e90                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10004ea0                        __exidx_end = .
-                0x10004ea0                        . = ALIGN (0x4)
-                0x10004ea0                        __binary_info_start = .
+                0x10004e90                        __exidx_end = .
+                0x10004e90                        . = ALIGN (0x4)
+                0x10004e90                        __binary_info_start = .
 
-.binary_info    0x10004ea0       0x30
+.binary_info    0x10004e90       0x30
  *(.binary_info.keep.*)
+ .binary_info.keep.__bi_ptr14
+                0x10004e90        0x4 CMakeFiles/motor.dir/motor.c.obj
  .binary_info.keep.__bi_ptr13
-                0x10004ea0        0x4 CMakeFiles/motor.dir/motor.c.obj
- .binary_info.keep.__bi_ptr12
-                0x10004ea4        0x4 CMakeFiles/motor.dir/motor.c.obj
+                0x10004e94        0x4 CMakeFiles/motor.dir/motor.c.obj
  .binary_info.keep.__bi_ptr81
-                0x10004ea8        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004e98        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x10004eac        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004e9c        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10004eb0        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004ea0        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x10004eb4        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004ea4        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x10004eb8        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004ea8        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x10004ebc        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004eac        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr22
-                0x10004ec0        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004eb0        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr34
-                0x10004ec4        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004eb4        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr33
-                0x10004ec8        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004eb8        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr182
-                0x10004ecc        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004ed0                        __binary_info_end = .
+                0x10004ebc        0x4 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004ec0                        __binary_info_end = .
 
-.rel.dyn        0x10004ed0        0x0
- .rel.iplt      0x10004ed0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10004ed0                        . = ALIGN (0x4)
+.rel.dyn        0x10004ec0        0x0
+ .rel.iplt      0x10004ec0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10004ec0                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2185,7 +2182,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x20000000       0xc0 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0xe38 load address 0x10004ed0
+.data           0x200000c0      0xe38 load address 0x10004ec0
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2321,36 +2318,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x20000ef8                        . = ALIGN (0x4)
                 0x20000ef8                        __data_end__ = .
-                0x10004ed0                        __etext = LOADADDR (.data)
+                0x10004ec0                        __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x20000ef8        0x0 load address 0x10005d08
+                0x20000ef8        0x0 load address 0x10005cf8
  .tm_clone_table
                 0x20000ef8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000ef8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000ef8        0x0 load address 0x10005d08
+.igot.plt       0x20000ef8        0x0 load address 0x10005cf8
  .igot.plt      0x20000ef8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000ef8        0x0 load address 0x10005d08
+                0x20000ef8        0x0 load address 0x10005cf8
                 0x20000ef8                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10005d08
+.scratch_x      0x20040000        0x0 load address 0x10005cf8
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10005d08                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10005cf8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10005d08
+.scratch_y      0x20041000        0x0 load address 0x10005cf8
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10005d08                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10005cf8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000ef8      0xd98
                 0x20000ef8                        . = ALIGN (0x4)
@@ -2476,8 +2473,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10005d08        0x0
-                0x10005d08                        PROVIDE (__flash_binary_end = .)
+.flash_end      0x10005cf8        0x0
+                0x10005cf8                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2556,7 +2553,7 @@ LOAD CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/vi
 LOAD CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-LOAD /tmp/ccsbCqTs.o
+LOAD /tmp/ccGguM6X.o
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2674,7 +2671,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007ce       0x2c CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x000007fa       0x22 /tmp/ccsbCqTs.o
+                0x000007fa       0x22 /tmp/ccGguM6X.o
  .ARM.attributes
                 0x0000081c       0x1e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
