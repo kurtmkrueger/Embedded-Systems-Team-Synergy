@@ -27,3 +27,4 @@ pico_add_extra_outputs(motor)
 
 target_link_libraries(test pico_stdlib)
 target_link_libraries(motor pico_stdlib)
+target_link_libraries(sound pico_stdlib)
