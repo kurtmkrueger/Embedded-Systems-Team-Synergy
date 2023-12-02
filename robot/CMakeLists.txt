@@ -13,6 +13,9 @@ add_executable(test
 add_executable(motor
 	motor.c
 )
+add_executable(sound
+	sound.c
+)
 
 pico_enable_stdio_usb(test 1)
 pico_enable_stdio_uart(test 1)
@@ -24,3 +27,4 @@ pico_add_extra_outputs(motor)
 
 target_link_libraries(test pico_stdlib)
 target_link_libraries(motor pico_stdlib)
+target_link_libraries(sound pico_stdlib)
