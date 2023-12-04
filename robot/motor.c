@@ -15,30 +15,30 @@ int main() {
 
 	stdio_init_all();
 
-	gpio_init(FWD_LEFT);
+//	gpio_init(FWD_LEFT);
 	//------------------------------------------
 	gpio_set_function(FWD_LEFT, GPIO_FUNC_PWM); // PWM stuff...
 	uint slice_num = pwm_gpio_to_slice_num(FWD_LEFT);
 	uint channel_num = pwm_gpio_to_channel(FWD_LEFT);
-	pwm_set_enabled(slice_num, 1);
+	pwm_set_wrap(slice_num, 7);
+	pwm_set_enabled(slice_num, true);
 	//------------------------------------------
 	gpio_init(REV_LEFT);
 	gpio_init(FWD_RIGHT);
 	gpio_init(REV_RIGHT);
-	gpio_set_dir(FWD_LEFT, GPIO_OUT);
+//	gpio_set_dir(FWD_LEFT, GPIO_OUT);
 	gpio_set_dir(REV_LEFT, GPIO_OUT);
 	gpio_set_dir(FWD_RIGHT, GPIO_OUT);
 	gpio_set_dir(REV_RIGHT, GPIO_OUT);
 	while(1) {
-		gpio_put(FWD_LEFT, 0);
+		pwm_set_chan_level(slice_num, channel_num, 0);
+//		gpio_put(FWD_LEFT, 0);
 		gpio_put(REV_LEFT, 0);
 		gpio_put(FWD_RIGHT, 0);
 		gpio_put(REV_RIGHT, 0);
 		sleep_ms(500);
-/*		gpio_put(FWD_LEFT, 1);
-		gpio_put(FWD_RIGHT, 1);
-		puts("Hello World\n");*/
-		pwm_set_gpio_level(FWD_LEFT, 2^8);
+//		gpio_put(FWD_LEFT, 1);
+		pwm_set_chan_level(slice_num, channel_num, 5);
 		gpio_put(FWD_RIGHT, 1);
 		sleep_ms(500);
 	}
