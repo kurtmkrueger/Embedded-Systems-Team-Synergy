@@ -29,23 +29,36 @@ int main() {
 //	----------------------------------------------------------
 //	PWM initialization...
 	gpio_set_function(PWM_LEFT, GPIO_FUNC_PWM);
-	uint slice_num = pwm_gpio_to_slice_num(PWM_LEFT);
-	uint channel_num = pwm_gpio_to_channel(PWM_LEFT);
-//	This sets a PWM range from 0-7...	
-	pwm_set_wrap(slice_num, 7);
-	pwm_set_enabled(slice_num, true);
-//	set PWM level to be fixed at ~50% since 4 is between 0 and 7...
-	pwm_set_chan_level(slice_num, channel_num, 4);
+	gpio_set_function(PWM_RIGHT, GPIO_FUNC_PWM);
+	uint left_slice_num = pwm_gpio_to_slice_num(PWM_LEFT);
+	uint right_slice_num = pwm_gpio_to_slice_num(PWM_RIGHT);
+	uint left_channel_num = pwm_gpio_to_channel(PWM_LEFT);
+	uint right_channel_num = pwm_gpio_to_channel(PWM_RIGHT);
+//	This sets a PWM range from 0-255...	
+	pwm_set_wrap(left_slice_num, 255);
+	pwm_set_wrap(right_slice_num, 255);
+	pwm_set_enabled(left_slice_num, true);
+	pwm_set_enabled(right_slice_num, true);
+//	set PWM level to be fixed at ~50% since 64 is between 0 and 255...
+	pwm_set_chan_level(left_slice_num, left_channel_num, 128);
+	pwm_set_chan_level(right_slice_num, right_channel_num, 128);
 //	--------------------------------------------------------
 //	begin the loop
+	gpio_put(FWD_LEFT, 0);
+	gpio_put(REV_LEFT, 0);
+	gpio_put(FWD_RIGHT, 0);
+	gpio_put(REV_RIGHT, 0);
+	sleep_ms(500);
+	gpio_put(FWD_LEFT, 1);
+	gpio_put(FWD_RIGHT, 1);
 	while(true) {
-		gpio_put(FWD_LEFT, 0);
-		gpio_put(REV_LEFT, 0);
-		gpio_put(FWD_RIGHT, 0);
-		gpio_put(REV_RIGHT, 0);
+		pwm_set_chan_level(left_slice_num, left_channel_num, 80);
 		sleep_ms(500);
-		gpio_put(FWD_LEFT, 1);
-		gpio_put(FWD_RIGHT, 1);
+		pwm_set_chan_level(right_slice_num, right_channel_num, 80);
+		sleep_ms(2500);
+		pwm_set_chan_level(left_slice_num, left_channel_num, 128);
 		sleep_ms(500);
+		pwm_set_chan_level(right_slice_num, right_channel_num, 128);
+		sleep_ms(2500);
 	}
 }
