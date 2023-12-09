@@ -17,6 +17,6 @@ pico_add_extra_outputs(main)
 pico_enable_stdio_usb(main 1)
 pico_enable_stdio_uart(main 1)
 
-target_link_libraries(main stdio pico_stdlib hardware_gpio hardware_timer hardware_dma hardware_pwm pico_binary_info hardware_i2c)
+target_link_libraries(main pico_stdlib hardware_gpio hardware_timer hardware_dma hardware_pwm pico_binary_info hardware_i2c)
 
 

@@ -43,16 +43,6 @@ void initSoundSensor() {
     gpio_set_dir(SOUND_SENSOR, GPIO_IN);
 }
 
-void setPwmLevel(uint level) {
-    if (level == 100) {
-
-    }
-    else if (level == 50) {
-        pwm_set_chan_level(left_slice_num, left_channel_num, 127);
-        pwm_set_chan_level(right_slice_num, right_channel_num, 127);
-    }
-}
-
 void startMotors() {
     // Assuming a simple forward motion
     gpio_put(FWD_LEFT, 1);
@@ -194,7 +184,7 @@ int main() {
     mpu6050_reset();
 
     int16_t acceleration[3], gyro[3], temp;
-
+#endif
 
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
@@ -267,5 +257,4 @@ int main() {
         sleep_ms(50);
     }
     return 0;
-#endif
 }
