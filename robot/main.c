@@ -42,16 +42,6 @@ void initSoundSensor() {
     gpio_set_dir(SOUND_SENSOR, GPIO_IN);
 }
 
-void setPwmLevel(uint level) {
-    if (level == 100) {
-
-    }
-    else if (level == 50) {
-        pwm_set_chan_level(left_slice_num, left_channel_num, 127);
-        pwm_set_chan_level(right_slice_num, right_channel_num, 127);
-    }
-}
-
 void startMotors() {
     // Assuming a simple forward motion
     gpio_put(FWD_LEFT, 1);
@@ -137,9 +127,9 @@ int main() {
 	pwm_set_wrap(right_slice_num, 255);
 	pwm_set_enabled(left_slice_num, true);
 	pwm_set_enabled(right_slice_num, true);
-    // Set initial PWM level to be fixed at ~50% since 128 is between 0 and 255...
-	pwm_set_chan_level(left_slice_num, left_channel_num, 128);
-	pwm_set_chan_level(right_slice_num, right_channel_num, 128);
+    // Set initial PWM level to be fixed at ~50% since 127 is between 0 and 255...
+	pwm_set_chan_level(left_slice_num, left_channel_num, 127);
+	pwm_set_chan_level(right_slice_num, right_channel_num, 127);
 
 
     int clap_count = 1;
@@ -185,7 +175,7 @@ int main() {
             }
         }
         // Add a delay between measurements
-        sleep_ms(10);
+        sleep_ms(50);
     }
     return 0;
 }
