@@ -129,10 +129,10 @@ int main() {
     // Initialize pwm stuff
     gpio_set_function(PWM_LEFT, GPIO_FUNC_PWM);
 	gpio_set_function(PWM_RIGHT, GPIO_FUNC_PWM);
-    uint LEFT_SLICE_NUM = pwm_gpio_to_slice_num(PWM_LEFT);
-    uint RIGHT_SLICE_NUM = pwm_gpio_to_slice_num(PWM_RIGHT);
-    uint LEFT_CHANNEL_NUM = pwm_gpio_to_channel(PWM_LEFT);
-    uint RIGHT_CHANNEL_NUM = pwm_gpio_to_channel(PWM_RIGHT);
+    uint left_slice_num = pwm_gpio_to_slice_num(PWM_LEFT);
+    uint right_slice_num = pwm_gpio_to_slice_num(PWM_RIGHT);
+    uint left_channel_num = pwm_gpio_to_channel(PWM_LEFT);
+    uint right_channel_num = pwm_gpio_to_channel(PWM_RIGHT);
     // This sets a PWM range from 0-255...	
 	pwm_set_wrap(left_slice_num, 255);
 	pwm_set_wrap(right_slice_num, 255);
