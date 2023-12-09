@@ -117,6 +117,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/kurt/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/kurt/pico/pico-sdk/lib/tinyusb/hw"
   "/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   )
 
 # The set of dependency files which are needed:

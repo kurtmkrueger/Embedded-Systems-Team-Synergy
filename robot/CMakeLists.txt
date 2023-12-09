@@ -7,24 +7,16 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
-add_executable(test
-	test.c
-)
-add_executable(motor
-	motor.c
+add_executable(main
+	main.c
 )
 add_executable(sound
 	sound.c
 )
 
-pico_enable_stdio_usb(test 1)
-pico_enable_stdio_uart(test 1)
-pico_enable_stdio_usb(motor 1)
-pico_enable_stdio_uart(motor 1)
+pico_enable_stdio_usb(main 1)
+pico_enable_stdio_uart(main 1)
 
-pico_add_extra_outputs(test)
-pico_add_extra_outputs(motor)
+pico_add_extra_outputs(main)
 
-target_link_libraries(test pico_stdlib)
-target_link_libraries(motor pico_stdlib)
-target_link_libraries(sound pico_stdlib)
+target_link_libraries(main pico_stdlib hardware_pwm hardware_gpio)
