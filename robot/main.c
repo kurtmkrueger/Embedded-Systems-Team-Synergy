@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
-#include "hardware/dma.h"
 #include "hardware/timer.h"
-#include "pico/binary_info.h"
+#include "hardware/dma.h"
 #include "hardware/pwm.h"
+#include "pico/binary_info.h"
 
 #define TRIG_PIN 18     // GPIO pin connected to the TRIG pin of the HC-SR04
 #define ECHO_PIN 19     // GPIO pin connected to the ECHO pin of the HC-SR04
