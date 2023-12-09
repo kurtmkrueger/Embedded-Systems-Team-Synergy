@@ -1,16 +1,21 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "hardware/dma.h"
 #include "hardware/timer.h"
+#include "pico/binary_info.h"
+#include "hardware/pwm.h"
 
 #define TRIG_PIN 18     // GPIO pin connected to the TRIG pin of the HC-SR04
 #define ECHO_PIN 19     // GPIO pin connected to the ECHO pin of the HC-SR04
 #define STOP_DISTANCE 10 // Distance in centimeters at which the robot should stop
 
-const uint FWD_LEFT = 2;
-const uint REV_LEFT = 3;
-const uint FWD_RIGHT = 4;
-const uint REV_RIGHT = 5;
+const uint FWD_RIGHT = 2;
+const uint REV_RIGHT = 3;
+const uint FWD_LEFT = 4;
+const uint REV_LEFT = 5;
+const uint PWM_RIGHT = 6;
+const uint PWM_LEFT = 7;
 const uint LED_PIN   = 25;
 
 void initMotors() {
@@ -30,6 +35,23 @@ void initMotors() {
     gpio_put(REV_RIGHT, 0);
 }
 
+void initPWM() {
+    gpio_set_function(PWM_LEFT, GPIO_FUNC_PWM);
+	gpio_set_function(PWM_RIGHT, GPIO_FUNC_PWM);
+	uint left_slice_num = pwm_gpio_to_slice_num(PWM_LEFT);
+	uint right_slice_num = pwm_gpio_to_slice_num(PWM_RIGHT);
+	uint left_channel_num = pwm_gpio_to_channel(PWM_LEFT);
+	uint right_channel_num = pwm_gpio_to_channel(PWM_RIGHT);
+//	This sets a PWM range from 0-255...	
+	pwm_set_wrap(left_slice_num, 255);
+	pwm_set_wrap(right_slice_num, 255);
+	pwm_set_enabled(left_slice_num, true);
+	pwm_set_enabled(right_slice_num, true);
+//	set initial PWM level to be fixed at ~50% since 128 is between 0 and 255...
+	pwm_set_chan_level(left_slice_num, left_channel_num, 128);
+	pwm_set_chan_level(right_slice_num, right_channel_num, 128);
+}
+
 void startMotors() {
     // Assuming a simple forward motion
     gpio_put(FWD_LEFT, 1);
@@ -44,8 +66,8 @@ void stopMotors() {
     gpio_put(REV_LEFT, 0);
     gpio_put(FWD_RIGHT, 0);
     gpio_put(REV_RIGHT, 0);
-
 }
+
 void initHC_SR04() {
     gpio_init(TRIG_PIN);
     gpio_init(ECHO_PIN);
@@ -90,12 +112,13 @@ uint32_t measureDistance() {
 int main() {
     stdio_init_all();
     initMotors();
+    initPWM();
     initHC_SR04();
 
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
-    while (1) {
+    while (true) {
         triggerPulse();
         uint32_t distance = measureDistance();
 
@@ -113,7 +136,7 @@ int main() {
             startMotors();
         }
 
-        sleep_ms(250);  // Add a delay between measurements
+        sleep_ms(10);  // Add a delay between measurements
     }
 
     return 0;
