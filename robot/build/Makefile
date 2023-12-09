@@ -911,6 +911,30 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+
+# target to build an object file
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
 
@@ -1814,6 +1838,9 @@ help:
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj"
+	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
