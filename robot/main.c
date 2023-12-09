@@ -44,8 +44,7 @@ void initSoundSensor() {
 
 void setPwmLevel(uint level) {
     if (level == 100) {
-        pwm_set_chan_level(left_slice_num, left_channel_num, 255);
-        pwm_set_chan_level(right_slice_num, right_channel_num, 255);
+
     }
     else if (level == 50) {
         pwm_set_chan_level(left_slice_num, left_channel_num, 127);
@@ -165,7 +164,8 @@ int main() {
             if (gpio_get(SOUND_SENSOR) == 1) {
                 if (clap_count == 1) {
                     clap_count = 2;
-                    setPwmLevel(100);
+                    pwm_set_chan_level(left_slice_num, left_channel_num, 255);
+                    pwm_set_chan_level(right_slice_num, right_channel_num, 255);
                     startMotors();
                 }
                 else if (clap_count == 2) {
@@ -174,7 +174,8 @@ int main() {
                 }
                 else if (clap_count == 3) {
                     clap_count = 4;
-                    setPwmLevel(50);
+                    pwm_set_chan_level(left_slice_num, left_channel_num, 127);
+                    pwm_set_chan_level(right_slice_num, right_channel_num, 127);
                     reverseMotors();
                 }
                 else {
