@@ -10,6 +10,9 @@ pico_sdk_init()
 add_executable(main
 	main.c
 )
+add_executable(sound
+	sound.c
+)
 
 pico_enable_stdio_usb(main 1)
 pico_enable_stdio_uart(main 1)
