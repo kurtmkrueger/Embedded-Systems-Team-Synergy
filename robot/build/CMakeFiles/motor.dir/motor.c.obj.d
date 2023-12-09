@@ -58,4 +58,7 @@ CMakeFiles/motor.dir/motor.c.obj: /home/kurt/pico/robot/motor.c \
  /home/kurt/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
  /home/kurt/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /home/kurt/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
- /home/kurt/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h
+ /home/kurt/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+ /home/kurt/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
+ /home/kurt/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
+ /home/kurt/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h

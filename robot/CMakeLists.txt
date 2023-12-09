@@ -10,9 +10,19 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 add_executable(main
+<<<<<<< robot/CMakeLists.txt
     main.c
 )
 
-target_link_libraries(main pico_stdlib hardware_gpio hardware_timer hardware_dma)
+target_link_libraries(main pico_stdlib hardware_gpio hardware_timer hardware_dma hardware_pwm)
 
 pico_add_extra_outputs(main)
+=======
+	main.c
+)
+
+pico_enable_stdio_usb(main 1)
+pico_enable_stdio_uart(main 1)
+
+pico_add_extra_outputs(main)
+>>>>>>> robot/CMakeLists.txt
