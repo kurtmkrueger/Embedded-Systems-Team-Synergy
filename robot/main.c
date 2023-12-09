@@ -18,10 +18,7 @@ const uint REV_LEFT = 5;
 const uint PWM_RIGHT = 6;
 const uint PWM_LEFT = 7;
 const uint LED_PIN   = 25;
-uint LEFT_SLICE_NUM = pwm_gpio_to_slice_num(PWM_LEFT);
-uint RIGHT_SLICE_NUM = pwm_gpio_to_slice_num(PWM_RIGHT);
-uint LEFT_CHANNEL_NUM = pwm_gpio_to_channel(PWM_LEFT);
-uint RIGHT_CHANNEL_NUM = pwm_gpio_to_channel(PWM_RIGHT);
+
 
 void initMotors() {
     gpio_init(FWD_LEFT);
@@ -40,32 +37,19 @@ void initMotors() {
     gpio_put(REV_RIGHT, 0);
 }
 
-void initPWM() {
-    gpio_set_function(PWM_LEFT, GPIO_FUNC_PWM);
-	gpio_set_function(PWM_RIGHT, GPIO_FUNC_PWM);
-//	This sets a PWM range from 0-255...	
-	pwm_set_wrap(left_slice_num, 255);
-	pwm_set_wrap(right_slice_num, 255);
-	pwm_set_enabled(left_slice_num, true);
-	pwm_set_enabled(right_slice_num, true);
-//	set initial PWM level to be fixed at ~50% since 128 is between 0 and 255...
-	pwm_set_chan_level(left_slice_num, left_channel_num, 128);
-	pwm_set_chan_level(right_slice_num, right_channel_num, 128);
-}
-
 void initSoundSensor() {
     gpio_init(SOUND_SENSOR);
     gpio_set_dir(SOUND_SENSOR, GPIO_IN);
 }
 
-void setPwmLevel(level) {
+void setPwmLevel(uint level) {
     if (level == 100) {
-        pwm_set_chan_level(LEFT_SLICE_NUM, LEFT_CHANNEL_NUM, 255);
-        pwm_set_chan_level(RIGHT_SLICE_NUM, RIGHT_CHANNEL_NUM, 255);
+        pwm_set_chan_level(left_slice_num, left_channel_num, 255);
+        pwm_set_chan_level(right_slice_num, right_channel_num, 255);
     }
     else if (level == 50) {
-        pwm_set_chan_level(LEFT_SLICE_NUM, LEFT_CHANNEL_NUM, 127);
-        pwm_set_chan_level(RIGHT_SLICE_NUM, RIGHT_CHANNEL_NUM, 127);
+        pwm_set_chan_level(left_slice_num, left_channel_num, 127);
+        pwm_set_chan_level(right_slice_num, right_channel_num, 127);
     }
 }
 
@@ -138,11 +122,26 @@ uint32_t measureDistance() {
 int main() {
     stdio_init_all();
     initMotors();
-    initPWM();
     initHC_SR04();
 
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
+    // Initialize pwm stuff
+    gpio_set_function(PWM_LEFT, GPIO_FUNC_PWM);
+	gpio_set_function(PWM_RIGHT, GPIO_FUNC_PWM);
+    uint LEFT_SLICE_NUM = pwm_gpio_to_slice_num(PWM_LEFT);
+    uint RIGHT_SLICE_NUM = pwm_gpio_to_slice_num(PWM_RIGHT);
+    uint LEFT_CHANNEL_NUM = pwm_gpio_to_channel(PWM_LEFT);
+    uint RIGHT_CHANNEL_NUM = pwm_gpio_to_channel(PWM_RIGHT);
+    // This sets a PWM range from 0-255...	
+	pwm_set_wrap(left_slice_num, 255);
+	pwm_set_wrap(right_slice_num, 255);
+	pwm_set_enabled(left_slice_num, true);
+	pwm_set_enabled(right_slice_num, true);
+    // Set initial PWM level to be fixed at ~50% since 128 is between 0 and 255...
+	pwm_set_chan_level(left_slice_num, left_channel_num, 128);
+	pwm_set_chan_level(right_slice_num, right_channel_num, 128);
+
 
     int clap_count = 1;
 
@@ -166,7 +165,7 @@ int main() {
             if (gpio_get(SOUND_SENSOR) == 1) {
                 if (clap_count == 1) {
                     clap_count = 2;
-                    setPwmLevel(int 100);
+                    setPwmLevel(100);
                     startMotors();
                 }
                 else if (clap_count == 2) {
@@ -175,7 +174,7 @@ int main() {
                 }
                 else if (clap_count == 3) {
                     clap_count = 4;
-                    setPwmLevel(int 50);
+                    setPwmLevel(50);
                     reverseMotors();
                 }
                 else {
