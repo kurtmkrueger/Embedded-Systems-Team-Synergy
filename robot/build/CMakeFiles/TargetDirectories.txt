@@ -1,5 +1,4 @@
-/home/kurt/pico/robot/build/CMakeFiles/test.dir
-/home/kurt/pico/robot/build/CMakeFiles/motor.dir
+/home/kurt/pico/robot/build/CMakeFiles/main.dir
 /home/kurt/pico/robot/build/CMakeFiles/ELF2UF2Build.dir
 /home/kurt/pico/robot/build/CMakeFiles/edit_cache.dir
 /home/kurt/pico/robot/build/CMakeFiles/rebuild_cache.dir

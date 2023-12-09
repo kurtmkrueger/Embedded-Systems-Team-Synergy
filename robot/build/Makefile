@@ -117,30 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named main
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-#=============================================================================
-# Target rules for targets named motor
-
-# Build rule for target.
-motor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motor
-.PHONY : motor
-
-# fast build rule for target.
-motor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/build
-.PHONY : motor/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -220,499 +207,12 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
-
-home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
-.PHONY : home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
-
 home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -720,8 +220,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/kurt/pico/
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -729,8 +228,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/kurt/pico/
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -738,8 +236,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/kurt/pico/pico-
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -747,8 +244,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/kurt/pico/pico-sd
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -756,8 +252,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/kurt/pico/pico-sd
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -765,8 +260,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/kurt/pico/pico-sdk/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.i: home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -774,8 +268,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.i: home/kurt/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.s: home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -783,8 +276,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.s: home/kurt/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/sem.obj: home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -792,8 +284,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/sem.obj: home/kurt/pico/pico-sdk/sr
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/sem.i: home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -801,8 +292,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/sem.i: home/kurt/pico/pico-sdk/src/
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_sync/sem.s: home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -810,8 +300,7 @@ home/kurt/pico/pico-sdk/src/common/pico_sync/sem.s: home/kurt/pico/pico-sdk/src/
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_time/time.obj: home/kurt/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -819,8 +308,7 @@ home/kurt/pico/pico-sdk/src/common/pico_time/time.obj: home/kurt/pico/pico-sdk/s
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_time/time.i: home/kurt/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -828,8 +316,7 @@ home/kurt/pico/pico-sdk/src/common/pico_time/time.i: home/kurt/pico/pico-sdk/src
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_time/time.s: home/kurt/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -837,8 +324,7 @@ home/kurt/pico/pico-sdk/src/common/pico_time/time.s: home/kurt/pico/pico-sdk/src
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -846,8 +332,7 @@ home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/kurt/pico/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -855,8 +340,7 @@ home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/kurt/pico/pi
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -864,8 +348,7 @@ home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/kurt/pico/pi
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_util/datetime.obj: home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -873,8 +356,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/datetime.obj: home/kurt/pico/pico-s
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_util/datetime.i: home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -882,8 +364,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/datetime.i: home/kurt/pico/pico-sdk
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_util/datetime.s: home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -891,8 +372,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/datetime.s: home/kurt/pico/pico-sdk
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_util/pheap.obj: home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -900,8 +380,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/pheap.obj: home/kurt/pico/pico-sdk/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_util/pheap.i: home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -909,8 +388,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/pheap.i: home/kurt/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_util/pheap.s: home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -918,8 +396,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/pheap.s: home/kurt/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/kurt/pico/pico-sdk/src/common/pico_util/queue.obj: home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -927,8 +404,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/queue.obj: home/kurt/pico/pico-sdk/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/kurt/pico/pico-sdk/src/common/pico_util/queue.i: home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -936,8 +412,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/queue.i: home/kurt/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/kurt/pico/pico-sdk/src/common/pico_util/queue.s: home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -945,8 +420,7 @@ home/kurt/pico/pico-sdk/src/common/pico_util/queue.s: home/kurt/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -954,8 +428,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/kurt/pico/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -963,8 +436,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/kurt/pico/pi
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -972,8 +444,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/kurt/pico/pi
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -981,8 +452,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/kurt/pic
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -990,8 +460,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/kurt/pico/
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -999,8 +468,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/kurt/pico/
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -1008,44 +476,39 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/kurt/p
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
-home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
 
 # target to build an object file
-home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
-home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
 
 # target to preprocess a source file
-home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
-home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
 
 # target to generate assembly for a file
-home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1053,8 +516,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1062,8 +524,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -1071,8 +532,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/kurt/pico/pico
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1080,8 +540,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/kurt/pico/pico-s
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1089,8 +548,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/kurt/pico/pico-s
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1098,8 +556,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -1107,8 +564,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/kurt/pico/pico
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1116,8 +572,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/kurt/pico/pico-s
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1125,8 +580,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/kurt/pico/pico-s
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1134,8 +588,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/kurt/pico/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1143,8 +596,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1152,8 +604,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1161,8 +612,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/kurt/pico/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1170,8 +620,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/kurt/pico/pi
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1179,8 +628,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/kurt/pico/pi
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1188,8 +636,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/kurt/pico/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1197,8 +644,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1206,8 +652,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1215,8 +660,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/kurt/pico/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1224,8 +668,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1233,8 +676,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1242,8 +684,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/kurt
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1251,8 +692,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/kurt/p
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1260,8 +700,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/kurt/p
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1269,8 +708,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/kurt/pico/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1278,8 +716,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1287,8 +724,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1296,8 +732,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/kurt
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1305,8 +740,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/kurt/pico/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1314,8 +748,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/kurt/pico/pi
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1323,8 +756,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/kurt/pico/pi
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1332,8 +764,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/kurt/pico/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1341,8 +772,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/kurt/p
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1350,8 +780,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/kur
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1359,8 +788,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/kurt/
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1368,8 +796,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/kurt/
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1377,8 +804,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/kurt/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1386,8 +812,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/kurt/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1395,8 +820,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/kurt/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1404,44 +828,15 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1449,8 +844,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/kurt/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1458,8 +852,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/kurt/pi
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1467,8 +860,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/kurt/pi
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1476,8 +868,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/kurt/pico
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1485,8 +876,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/kurt/pico/p
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1494,8 +884,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/kurt/pico/p
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1503,8 +892,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/ku
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1512,8 +900,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: 
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1521,8 +908,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/kurt/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1530,8 +916,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/kurt/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1539,8 +924,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/kurt/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1548,8 +932,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/kurt
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1557,8 +940,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/kurt/pic
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1566,8 +948,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/kurt/pico/
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1575,8 +956,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/kurt/pico/
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1584,8 +964,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/kurt/pico/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1593,8 +972,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1602,8 +980,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1611,8 +988,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/kurt/pico/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1620,8 +996,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/kurt/pico/pi
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1629,8 +1004,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/kurt/pico/pi
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1638,8 +1012,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1647,8 +1020,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/ku
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1656,8 +1028,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/ku
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1665,8 +1036,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/kurt/pi
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1674,8 +1044,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/k
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1683,8 +1052,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/kur
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1692,8 +1060,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/kur
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1701,8 +1068,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/kurt/pico/pico
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1710,8 +1076,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/kurt/pico/pico-s
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1719,8 +1084,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/kurt/pico/pico-s
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1728,8 +1092,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/kurt
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1737,8 +1100,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/kurt/p
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1746,98 +1108,15 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/kurt/p
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
-
-# target to build an object file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 
 # target to build an object file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1845,8 +1124,7 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/kurt/pico/pico
 
 # target to preprocess a source file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1854,84 +1132,32 @@ home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/kurt/pico/pico
 
 # target to generate assembly for a file
 home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+main.obj: main.c.obj
+.PHONY : main.obj
 
 # target to build an object file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.obj
+.PHONY : main.c.obj
 
-home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
-
-# target to preprocess a source file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-
-home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
-
-# target to generate assembly for a file
-home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-
-motor.obj: motor.c.obj
-.PHONY : motor.obj
-
-# target to build an object file
-motor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/motor.c.obj
-.PHONY : motor.c.obj
-
-motor.i: motor.c.i
-.PHONY : motor.i
+main.i: main.c.i
+.PHONY : main.i
 
 # target to preprocess a source file
-motor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/motor.c.i
-.PHONY : motor.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.i
+.PHONY : main.c.i
 
-motor.s: motor.c.s
-.PHONY : motor.s
-
-# target to generate assembly for a file
-motor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/motor.c.s
-.PHONY : motor.c.s
-
-test.obj: test.c.obj
-.PHONY : test.obj
-
-# target to build an object file
-test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.c.obj
-.PHONY : test.c.obj
-
-test.i: test.c.i
-.PHONY : test.i
-
-# target to preprocess a source file
-test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.c.i
-.PHONY : test.c.i
-
-test.s: test.c.s
-.PHONY : test.s
+main.s: main.c.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.c.s
-.PHONY : test.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -1947,62 +1173,7 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
-	@echo "... motor"
-	@echo "... test"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.obj"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.i"
-	@echo "... home/kurt/pico/pico-sdk/lib/tinyusb/src/tusb.s"
+	@echo "... main"
 	@echo "... home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/kurt/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -2037,9 +1208,9 @@ help:
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
+	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj"
+	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
@@ -2081,9 +1252,6 @@ help:
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_math.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
@@ -2119,27 +1287,12 @@ help:
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
-	@echo "... home/kurt/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... motor.obj"
-	@echo "... motor.i"
-	@echo "... motor.s"
-	@echo "... test.obj"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... main.obj"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
