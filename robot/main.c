@@ -213,6 +213,8 @@ int main() {
         uint32_t distance = measureDistance();
         mpu6050_read_raw(acceleration, gyro, &temp);
         printf("Distance: %u cm\n", distance);
+        printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
+        printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
 
         // Check if the robot is too close to an obstacle
         if (distance < STOP_DISTANCE) {
