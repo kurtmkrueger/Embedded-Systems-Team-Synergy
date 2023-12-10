@@ -18,7 +18,7 @@ const uint FWD_LEFT = 4;
 const uint REV_LEFT = 5;
 const uint PWM_RIGHT = 6;
 const uint PWM_LEFT = 7;
-const uint LED_PIN   = 25;
+const uint LED_PIN   = 15;
 unsigned long last_event = 0;
 
 void initMotors() {
@@ -119,6 +119,7 @@ int main() {
     stdio_init_all();
     initMotors();
     initHC_SR04();
+    initSoundSensor();
 
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
@@ -194,7 +195,7 @@ int main() {
             }
         }
         // Add a delay between measurements
-        sleep_ms(100);
+        sleep_ms(50);
     }
     return 0;
 }
