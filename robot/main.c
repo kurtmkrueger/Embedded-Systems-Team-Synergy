@@ -44,7 +44,7 @@ void initSoundSensor() {
 }
 
 unsigned int millis() {
-    struct timeval t:
+    struct timeval t;
     gettimeofday(&t, NULL);
     return t.tv_sec*1000+(t.tv_usec+500)/1000;
 }
