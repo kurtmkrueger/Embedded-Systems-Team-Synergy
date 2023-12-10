@@ -169,7 +169,7 @@ int main() {
                     pwm_set_chan_level(right_slice_num, right_channel_num, 127);
                     reverseMotors();
                 }
-                else {
+                else if (clap_count == 4) {
                     clap_count = 1;
                     stopMotors();
                 }
