@@ -18,7 +18,7 @@ const uint FWD_LEFT = 8;
 const uint REV_LEFT = 9;
 const uint PWM_RIGHT = 10;
 const uint PWM_LEFT = 11;
-const uint LED_PIN   = 25;
+const uint LED_PIN   = 15;
 
 
 void initMotors() {
@@ -164,6 +164,7 @@ int main() {
     stdio_init_all();
     initMotors();
     initHC_SR04();
+    initSoundSensor();
 
 #if !defined(i2c_default) || !defined(PICO_DEFAULT_I2C_SDA_PIN) || !defined(PICO_DEFAULT_I2C_SCL_PIN)
     #warning i2c/mpu6050_i2c example requires a board with I2C pins
@@ -254,7 +255,7 @@ int main() {
             }
         }
         // Add a delay between measurements
-        sleep_ms(50);
+        sleep_ms(100);
     }
     return 0;
 }
