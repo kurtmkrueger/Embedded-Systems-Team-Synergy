@@ -158,29 +158,25 @@ int main() {
                     pwm_set_chan_level(left_slice_num, left_channel_num, 255);
                     pwm_set_chan_level(right_slice_num, right_channel_num, 255);
                     startMotors();
-                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
                 else if (clap_count == 2) {
                     clap_count = 3;
                     stopMotors();
-                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
                 else if (clap_count == 3) {
                     clap_count = 4;
                     pwm_set_chan_level(left_slice_num, left_channel_num, 127);
                     pwm_set_chan_level(right_slice_num, right_channel_num, 127);
                     reverseMotors();
-                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
                 else {
                     clap_count = 1;
                     stopMotors();
-                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
             }
         }
         // Add a delay between measurements
-        sleep_ms(50);
+        sleep_ms(25);
     }
     return 0;
 }
