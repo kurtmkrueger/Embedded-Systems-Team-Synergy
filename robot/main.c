@@ -5,7 +5,6 @@
 #include "hardware/dma.h"
 #include "hardware/pwm.h"
 #include "pico/binary_info.h"
-#include <pico/time.h>
 
 #define TRIG_PIN 18     // GPIO pin connected to the TRIG pin of the HC-SR04
 #define ECHO_PIN 19     // GPIO pin connected to the ECHO pin of the HC-SR04
@@ -41,12 +40,6 @@ void initMotors() {
 void initSoundSensor() {
     gpio_init(SOUND_SENSOR);
     gpio_set_dir(SOUND_SENSOR, GPIO_IN);
-}
-
-unsigned int millis() {
-    struct timeval t;
-    gettimeofday(&t, NULL);
-    return t.tv_sec*1000+(t.tv_usec+500)/1000;
 }
 
 void startMotors() {
@@ -161,36 +154,28 @@ int main() {
             // Check the sound sensor for a clap
             if (gpio_get(SOUND_SENSOR) == 1) {
                 if (clap_count == 1) {
-                    if (millis() - last_event > 25) {
-                        clap_count = 2;
-                        pwm_set_chan_level(left_slice_num, left_channel_num, 255);
-                        pwm_set_chan_level(right_slice_num, right_channel_num, 255);
-                        startMotors();
-                    }
-                    last_event = millis();
+                    clap_count = 2;
+                    pwm_set_chan_level(left_slice_num, left_channel_num, 255);
+                    pwm_set_chan_level(right_slice_num, right_channel_num, 255);
+                    startMotors();
+                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
                 else if (clap_count == 2) {
-                    if (millis() - last_event > 25) {
-                        clap_count = 3;
-                        stopMotors();
-                    }
-                    last_event = millis();
+                    clap_count = 3;
+                    stopMotors();
+                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
                 else if (clap_count == 3) {
-                    if (millis() - last_event > 25) {
-                        clap_count = 4;
-                        pwm_set_chan_level(left_slice_num, left_channel_num, 127);
-                        pwm_set_chan_level(right_slice_num, right_channel_num, 127);
-                        reverseMotors();
-                    }
-                    last_event = millis();
+                    clap_count = 4;
+                    pwm_set_chan_level(left_slice_num, left_channel_num, 127);
+                    pwm_set_chan_level(right_slice_num, right_channel_num, 127);
+                    reverseMotors();
+                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
                 else {
-                    if (millis() - last_event > 25) {
-                        clap_count = 1;
-                        stopMotors();
-                    }
-                    last_event = millis();
+                    clap_count = 1;
+                    stopMotors();
+                    while (gpio_get(SOUND_SENSOR) == 1);
                 }
             }
         }
