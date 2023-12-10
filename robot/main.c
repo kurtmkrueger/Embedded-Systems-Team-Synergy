@@ -183,6 +183,7 @@ int main() {
     bi_decl(bi_2pins_with_func(PICO_DEFAULT_I2C_SDA_PIN, PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C));
 
     mpu6050_reset();
+    sleep_ms(200);
 
     int16_t acceleration[3], gyro[3], temp;
 #endif
