@@ -176,7 +176,7 @@ int main() {
             }
         }
         // Add a delay between measurements
-        sleep_ms(25);
+        sleep_ms(100);
     }
     return 0;
 }
