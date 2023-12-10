@@ -11,12 +11,12 @@
 #define STOP_DISTANCE 10 // Distance in centimeters at which the robot should stop
 #define SOUND_SENSOR 0
 // GLOBALS
-const uint FWD_RIGHT = 2;
-const uint REV_RIGHT = 3;
-const uint FWD_LEFT = 4;
-const uint REV_LEFT = 5;
-const uint PWM_RIGHT = 6;
-const uint PWM_LEFT = 7;
+const uint FWD_RIGHT = 6;
+const uint REV_RIGHT = 7;
+const uint FWD_LEFT = 8;
+const uint REV_LEFT = 9;
+const uint PWM_RIGHT = 10;
+const uint PWM_LEFT = 11;
 const uint LED_PIN   = 15;
 unsigned long last_event = 0;
 
