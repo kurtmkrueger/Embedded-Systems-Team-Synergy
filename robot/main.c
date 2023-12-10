@@ -5,7 +5,7 @@
 #include "hardware/dma.h"
 #include "hardware/pwm.h"
 #include "pico/binary_info.h"
-#include <sys/time.h>
+#include <pico/time.h>
 
 #define TRIG_PIN 18     // GPIO pin connected to the TRIG pin of the HC-SR04
 #define ECHO_PIN 19     // GPIO pin connected to the ECHO pin of the HC-SR04
